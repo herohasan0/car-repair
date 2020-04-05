@@ -1,7 +1,5 @@
-import HelloWorld from '../components/hello-world';
+import Layout from '../components/Layout';
 
-export default () => (
-  <div className="app">
-    <HelloWorld />
-  </div>
-);
+export default () => {
+  return <Layout></Layout>;
+};

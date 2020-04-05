@@ -1,0 +1,34 @@
+body {
+  font-family: $font-family;
+}
+
+.container {
+  max-width: $container-width;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.icon {
+  width: $icon-width;
+  height: $icon-height;
+}
+
+.logo {
+  width: 174px;
+  height: 41px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(/bg-btn.png) no-repeat center / cover;
+  background-position: right;
+  font-size: 12px;
+  line-height: 24px;
+  background-color: #c40b0b;
+  height: $button-height;
+  color: white;
+  font-weight: bold;
+  padding: 9px 55px 9px 20px;
+}
