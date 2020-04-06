@@ -385,46 +385,29 @@ body {
   width: 174px;
   height: 41px; }
 
-.button {
+.Header > .container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background: url(/bg-btn.png) no-repeat center/cover;
-  background-position: right;
-  font-size: 12px;
-  line-height: 24px;
-  background-color: #c40b0b;
-  height: 40px;
-  color: white;
-  font-weight: bold;
-  padding: 9px 55px 9px 20px; }
+  justify-content: space-between;
+  padding-top: 26px; }
 
-.Header {
-  background: url(/bg-img.png) no-repeat center center/cover;
-  width: 100%;
-  height: 800px; }
-  .Header > .container {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 26px; }
-  .Header-right {
-    display: flex; }
-    .Header-right-section:nth-child(1) {
-      width: 206px;
-      margin-right: 30px; }
-    .Header-right-section:nth-child(2) {
-      width: 131px;
-      margin-right: 32px; }
-    .Header-right-section img {
-      float: left;
-      margin-right: 10px;
-      margin-top: 2px; }
-    .Header-right-section .text {
-      line-height: 22px;
-      letter-spacing: 0.15px;
-      font-size: 12px;
-      color: white;
-      font-weight: bold; }
+.Header-right {
+  display: flex; }
+  .Header-right-section:nth-child(1) {
+    width: 206px;
+    margin-right: 30px; }
+  .Header-right-section:nth-child(2) {
+    width: 131px;
+    margin-right: 32px; }
+  .Header-right-section img {
+    float: left;
+    margin-right: 10px;
+    margin-top: 2px; }
+  .Header-right-section .text {
+    line-height: 22px;
+    letter-spacing: 0.15px;
+    font-size: 12px;
+    color: white;
+    font-weight: bold; }
 
 .Navigation > .container {
   background-color: white;
@@ -481,3 +464,39 @@ body {
       position: relative;
       top: 1px;
       display: block; }
+
+.button {
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  justify-content: center;
+  align-items: center;
+  background: url(/bg-btn.png) no-repeat center/cover;
+  background-position: right;
+  font-size: 12px;
+  line-height: 24px;
+  background-color: #c40b0b;
+  height: 40px;
+  color: white;
+  font-weight: bold;
+  padding: 9px 55px 9px 20px; }
+
+.Top-bg {
+  background: url(/bg-img.png) no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 800px;
+  z-index: -1; }
+
+.Top-title {
+  color: white;
+  margin-top: 126px;
+  font-size: 56px;
+  line-height: 56px;
+  font-weight: 900; }
+
+.Top .container a .button {
+  margin-top: 48px;
+  margin-bottom: 312px; }

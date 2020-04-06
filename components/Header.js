@@ -34,7 +34,6 @@ export default () => {
           </div>
         </div>
       </div>
-      <Navigation />
     </header>
   );
 };
