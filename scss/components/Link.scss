@@ -1,0 +1,23 @@
+.Link {
+  display: flex;
+  align-items: center;
+  color: black;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.15px;
+  height: 40px;
+  &-text {
+    display: block;
+  }
+  img {
+    width: 16px;
+    height: 16px;
+    display: none;
+    &.expand {
+      position: relative;
+      top: 1px;
+      display: block;
+    }
+  }
+}

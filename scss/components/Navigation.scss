@@ -1,0 +1,44 @@
+.Navigation {
+  & > .container {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 28px;
+    padding: 10px 48px 10px 40px;
+  }
+  &-left {
+    display: flex;
+    .Link {
+      margin-right: 37px;
+      span {
+        padding-right: 5px;
+      }
+    }
+  }
+  &-right {
+    display: flex;
+    align-items: center;
+    .shopping-cart {
+      position: relative;
+      &-indicator {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 10px;
+        line-height: 22px;
+        border-radius: 16px;
+        background-color: $color-red;
+        color: white;
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        right: -8px;
+        top: -5px;
+      }
+    }
+
+    img {
+      margin-left: 22px;
+    }
+  }
+}

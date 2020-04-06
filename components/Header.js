@@ -1,4 +1,5 @@
 import Button from './Button';
+import Navigation from './Navigation';
 
 export default () => {
   return (
@@ -33,6 +34,7 @@ export default () => {
           </div>
         </div>
       </div>
+      <Navigation />
     </header>
   );
 };
