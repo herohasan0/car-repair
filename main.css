@@ -370,7 +370,8 @@ td {
   padding: 0; }
 
 body {
-  font-family: "Roboto", sans-serif; }
+  font-family: "Roboto", sans-serif;
+  background-color: #f5f5f5; }
 
 .container {
   max-width: 1020px;
@@ -481,6 +482,49 @@ body {
   color: white;
   font-weight: bold;
   padding: 9px 55px 9px 20px; }
+
+.Maincard {
+  background-color: #fff;
+  height: 700px;
+  position: relative;
+  top: -80px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto; }
+  .Maincard-content {
+    padding-top: 100px;
+    margin-left: 87px;
+    margin-right: 87px; }
+  .Maincard-text {
+    color: #4b4b4b;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.15;
+    margin-top: 36px; }
+  .Maincard-img {
+    margin-top: 54px;
+    width: 846px;
+    height: 420px; }
+
+.Title-subject {
+  display: flex;
+  align-items: center; }
+  .Title-subject img {
+    width: 17px;
+    height: 16px; }
+  .Title-subject span {
+    font-size: 12px;
+    color: #4b4b4b;
+    margin-left: 16px; }
+
+.Title-title {
+  width: 583px;
+  color: #02133c;
+  margin-top: 33px;
+  font-size: 36px;
+  line-height: 42px; }
 
 .Top-bg {
   background: url(/bg-img.png) no-repeat center center/cover;

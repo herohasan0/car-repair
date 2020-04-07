@@ -1,0 +1,22 @@
+.Title {
+  &-subject {
+    display: flex;
+    align-items: center;
+    img {
+      width: 17px;
+      height: 16px;
+    }
+    span {
+      font-size: 12px;
+      color: $color-gray;
+      margin-left: 16px;
+    }
+  }
+  &-title {
+    width: 583px;
+    color: $color-black;
+    margin-top: 33px;
+    font-size: 36px;
+    line-height: 42px;
+  }
+}

@@ -1,5 +1,6 @@
 import Layout from '../components/Layout';
 import Button from '../components/Button';
+import Maincard from '../components/Maincard';
 
 export default () => {
   return (
@@ -15,6 +16,7 @@ export default () => {
           <Button text="MAKE AN APPOINTMENT" />
         </div>
       </div>
+      <Maincard />
     </Layout>
   );
 };

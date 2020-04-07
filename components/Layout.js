@@ -8,6 +8,7 @@ function Layout({ children }) {
       <Head>
         <title>The Best Car Services</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <link rel="shortcut icon" type="image/png" href="/favicon.png" />
         <link
           href="https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&display=swap"
           rel="stylesheet"
