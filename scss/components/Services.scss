@@ -1,0 +1,14 @@
+.Services {
+  margin-top: 110px;
+  &-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    a {
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 66px;
+    }
+  }
+}
