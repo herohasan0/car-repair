@@ -526,6 +526,34 @@ body {
   font-size: 36px;
   line-height: 42px; }
 
+.Promises {
+  position: relative;
+  top: 35px;
+  margin-top: 110px; }
+  .Promises-content {
+    display: flex;
+    justify-content: space-between; }
+
+.Minicard {
+  display: flex;
+  margin-top: 69px; }
+  .Minicard-icon {
+    width: 63px;
+    height: 63px; }
+  .Minicard-content {
+    width: 235px;
+    margin-left: 23px; }
+    .Minicard-content-title {
+      font-weight: 900;
+      color: #02133c;
+      line-height: 26px;
+      font-size: 19px; }
+    .Minicard-content-text {
+      font-size: 16px;
+      margin-top: 23px;
+      color: #4b4b4b;
+      line-height: 24px; }
+
 .Top-bg {
   background: url(/bg-img.png) no-repeat center center/cover;
   position: absolute;

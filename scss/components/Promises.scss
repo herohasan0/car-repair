@@ -1,0 +1,9 @@
+.Promises {
+  position: relative;
+  top: 35px;
+  margin-top: 110px;
+  &-content {
+    display: flex;
+    justify-content: space-between;
+  }
+}

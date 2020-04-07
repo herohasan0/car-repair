@@ -1,0 +1,24 @@
+.Minicard {
+  display: flex;
+  margin-top: 69px;
+  &-icon {
+    width: 63px;
+    height: 63px;
+  }
+  &-content {
+    width: 235px;
+    margin-left: 23px;
+    &-title {
+      font-weight: 900;
+      color: $color-black;
+      line-height: 26px;
+      font-size: 19px;
+    }
+    &-text {
+      font-size: 16px;
+      margin-top: 23px;
+      color: $color-gray;
+      line-height: 24px;
+    }
+  }
+}
