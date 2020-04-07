@@ -2,6 +2,7 @@ import Layout from '../components/Layout';
 import Button from '../components/Button';
 import Maincard from '../components/Maincard';
 import Promises from '../components/Promises';
+import Video from '../components/Video';
 
 export default () => {
   return (
@@ -19,6 +20,7 @@ export default () => {
       </div>
       <Maincard />
       <Promises />
+      <Video />
     </Layout>
   );
 };

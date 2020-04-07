@@ -554,6 +554,23 @@ body {
       color: #4b4b4b;
       line-height: 24px; }
 
+.Video {
+  background: url(/video-cover.png) no-repeat center center/cover;
+  padding-top: 112px;
+  padding-bottom: 120px;
+  margin-top: 156px; }
+  .Video-content {
+    margin-left: 819px; }
+    .Video-content-title {
+      color: white;
+      font-size: 36px;
+      font-weight: 900;
+      line-height: 42px;
+      width: 411px; }
+    .Video-content-play {
+      width: 140px;
+      height: 140px; }
+
 .Top-bg {
   background: url(/bg-img.png) no-repeat center center/cover;
   position: absolute;
