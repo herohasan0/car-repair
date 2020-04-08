@@ -4,6 +4,7 @@ import Maincard from '../components/Maincard';
 import Promises from '../components/Promises';
 import Video from '../components/Video';
 import Services from '../components/Services';
+import Appointment from '../components/Appointment';
 
 export default () => {
   return (
@@ -23,6 +24,7 @@ export default () => {
       <Promises />
       <Video />
       <Services />
+      <Appointment />
     </Layout>
   );
 };

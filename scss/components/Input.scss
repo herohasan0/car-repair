@@ -1,0 +1,14 @@
+.Input {
+  height: 48px;
+  width: 224px;
+  padding-left: 23px;
+  background-color: $color-bg;
+  appearance: none;
+  box-shadow: none;
+  border: none;
+  &::placeholder {
+    color: $color-placeholder;
+    font-weight: lighter;
+    line-height: 24px;
+  }
+}
