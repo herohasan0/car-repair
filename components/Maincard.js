@@ -1,22 +1,31 @@
 import Title from './Title';
 
-function Maincard() {
+function Maincard(props) {
   return (
     <section className="Maincard">
       <div className="container">
         <div className="Maincard-content">
-          <Title
-            subject="WHO WE ARE"
-            title="Nemo enim ipsam voluptatem quia voluptas in proident"
-          />
-          <div className="Maincard-text">
-            Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
-            suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis
-            autem vel eum iure reprehenderit qui in ea voluptate velit esse quam
-            nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
-            voluptas nulla pariatur.
+          <Title subject={props.subject} title={props.title} />
+          <div className="Maincard-text" style={props.on}>
+            {props.text}
           </div>
-          <img src="/first-cover.png" alt="" className="Maincard-img" />
+          <div className="Maincard-links" style={props.on}>
+            <a href="" className="Maincard-links-link">
+              {props.link1}
+            </a>
+            <a href="" className="Maincard-links-link">
+              {props.link2}
+            </a>
+            <a href="" className="Maincard-links-link">
+              {props.link3}
+            </a>
+            <a href="" className="Maincard-links-link">
+              {props.link4}
+            </a>
+          </div>
+          <div className="Maincard-div">
+            <img src={props.img} alt="" className="Maincard-img" />
+          </div>
         </div>
       </div>
     </section>

@@ -18,9 +18,67 @@
     letter-spacing: 0.15;
     margin-top: 36px;
   }
+  &-div {
+  }
+
   &-img {
     margin-top: 54px;
     width: 846px;
-    height: 420px;
+  }
+  &-links {
+    &:before {
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      content: 'Live';
+      position: absolute;
+      right: 87px;
+      top: 344px;
+      width: 50px;
+      height: 30px;
+      background-color: $color-green;
+      z-index: 5;
+      box-shadow: 0px 8px 16px rgba(38, 38, 38, 0.2),
+        0px 4px 8px rgba(38, 38, 38, 0.24);
+      margin-top: 30px;
+      margin-right: 32px;
+    }
+    margin-top: 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-links-link {
+    position: relative;
+    font-size: 16px;
+    font-weight: lighter;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    color: $color-black;
+    border-bottom: 1px solid $color-gray-line;
+    width: 212px;
+    text-align: center;
+    padding-bottom: 15px;
+    &:nth-child(1)::before {
+      display: none;
+    }
+    &:nth-child(2) {
+      color: $color-red;
+      border-bottom: 4px solid $color-red;
+    }
+    &:nth-child(4)::before {
+      background-color: $color-gray-line;
+    }
+    &:before {
+      content: '';
+      width: 6px;
+      height: 6px;
+      border-radius: 6px;
+      position: absolute;
+      background-color: $color-green;
+      z-index: 1;
+      right: 27px;
+    }
   }
 }

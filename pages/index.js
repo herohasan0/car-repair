@@ -20,11 +20,30 @@ export default () => {
           <Button text="MAKE AN APPOINTMENT" />
         </div>
       </div>
-      <Maincard />
+      <Maincard
+        subject="WHO WE ARE"
+        title="Nemo enim ipsam voluptatem quia voluptas in proident"
+        text="Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
+            suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis
+            autem vel eum iure reprehenderit qui in ea voluptate velit esse quam
+            nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
+            voluptas nulla pariatur."
+        img="/first-cover.png"
+        on={{ display: 'none' }}
+      />
       <Promises />
       <Video />
       <Services />
       <Appointment />
+      <Maincard
+        subject="GALLERY & LIVE STREAMS"
+        title="Check out our hard workers"
+        link1="Gallery"
+        link2="Live stream: Bay 1"
+        link3="Live stream: Bay 2"
+        link4="Live stream: Bay 3"
+        img="/gallery-pic.png"
+      />
     </Layout>
   );
 };

@@ -505,8 +505,55 @@ body {
     margin-top: 36px; }
   .Maincard-img {
     margin-top: 54px;
-    width: 846px;
-    height: 420px; }
+    width: 846px; }
+  .Maincard-links {
+    margin-top: 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .Maincard-links:before {
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      content: 'Live';
+      position: absolute;
+      right: 87px;
+      top: 344px;
+      width: 50px;
+      height: 30px;
+      background-color: #21c613;
+      z-index: 5;
+      box-shadow: 0px 8px 16px rgba(38, 38, 38, 0.2), 0px 4px 8px rgba(38, 38, 38, 0.24);
+      margin-top: 30px;
+      margin-right: 32px; }
+  .Maincard-links-link {
+    position: relative;
+    font-size: 16px;
+    font-weight: lighter;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    color: #02133c;
+    border-bottom: 1px solid #d5d5d5;
+    width: 212px;
+    text-align: center;
+    padding-bottom: 15px; }
+    .Maincard-links-link:nth-child(1)::before {
+      display: none; }
+    .Maincard-links-link:nth-child(2) {
+      color: #c40b0b;
+      border-bottom: 4px solid #c40b0b; }
+    .Maincard-links-link:nth-child(4)::before {
+      background-color: #d5d5d5; }
+    .Maincard-links-link:before {
+      content: '';
+      width: 6px;
+      height: 6px;
+      border-radius: 6px;
+      position: absolute;
+      background-color: #21c613;
+      z-index: 1;
+      right: 27px; }
 
 .Title-subject {
   display: flex;
@@ -517,7 +564,8 @@ body {
   .Title-subject span {
     font-size: 12px;
     color: #4b4b4b;
-    margin-left: 16px; }
+    margin-left: 16px;
+    letter-spacing: 2.5px; }
 
 .Title-title {
   width: 583px;
