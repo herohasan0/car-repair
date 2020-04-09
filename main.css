@@ -779,6 +779,64 @@ body {
   .Customers .container > .Title .Title-title {
     width: 323px; }
 
+.Impactcard {
+  display: flex;
+  align-items: center; }
+  .Impactcard-left-img {
+    width: 76px;
+    height: 76px; }
+  .Impactcard-right {
+    margin-left: 22px; }
+    .Impactcard-right-title {
+      color: #c40b0b;
+      font-size: 36px;
+      line-height: 42px;
+      font-weight: 900; }
+    .Impactcard-right-description {
+      margin-top: 3px;
+      color: #f5f5f5;
+      letter-spacing: 0.15px;
+      line-height: 24px;
+      width: 149px;
+      margin-top: 5px; }
+
+.Impact {
+  background: url(/impact-bg.png) no-repeat center center/cover;
+  height: 608px;
+  margin-top: 210px; }
+  .Impact-top {
+    display: flex;
+    justify-content: space-between;
+    position: relative; }
+    .Impact-top .Title {
+      margin-top: 112px; }
+      .Impact-top .Title-subject span {
+        color: #d5d5d5; }
+      .Impact-top .Title-title {
+        color: white;
+        width: 411px; }
+    .Impact-top-img {
+      width: 498px;
+      height: 315px;
+      position: relative;
+      top: -80px; }
+  .Impact-middle {
+    display: flex;
+    justify-content: space-between; }
+  .Impact-bottom {
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 43px 76px 48px 70px;
+    margin-top: 134px; }
+    .Impact-bottom-title {
+      font-size: 24px;
+      width: 562px;
+      line-height: 30px;
+      font-weight: 900;
+      color: #02133c; }
+
 .Top-bg {
   background: url(/bg-img.png) no-repeat center center/cover;
   position: absolute;

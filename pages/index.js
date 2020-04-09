@@ -6,6 +6,7 @@ import Video from '../components/Video';
 import Services from '../components/Services';
 import Appointment from '../components/Appointment';
 import Customers from '../components/Customers';
+import Impact from '../components/Impact';
 
 export default () => {
   return (
@@ -46,6 +47,7 @@ export default () => {
         img="/gallery-pic.png"
       />
       <Customers />
+      <Impact />
     </Layout>
   );
 };
