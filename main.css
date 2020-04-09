@@ -572,6 +572,7 @@ body {
   color: #02133c;
   margin-top: 33px;
   font-size: 36px;
+  font-weight: 900;
   line-height: 42px; }
 
 .Promises {
@@ -749,6 +750,34 @@ body {
     color: #959595;
     font-weight: lighter;
     line-height: 24px; }
+
+.Customercard {
+  width: 324px;
+  height: 340px;
+  background-color: white;
+  padding: 50px 44px 40px 43px; }
+  .Customercard-top-text {
+    color: #4b4b4b;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    height: 189px; }
+  .Customercard-bottom {
+    margin-top: 18px; }
+    .Customercard-bottom-profile {
+      width: 48px;
+      height: 48px; }
+    .Customercard-bottom-name {
+      color: #02133c;
+      margin-top: 30px;
+      margin-left: 17px;
+      letter-spacing: 0.15px; }
+
+.Customers .container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 164px; }
+  .Customers .container > .Title .Title-title {
+    width: 323px; }
 
 .Top-bg {
   background: url(/bg-img.png) no-repeat center center/cover;

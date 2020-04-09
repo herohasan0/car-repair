@@ -1,0 +1,12 @@
+.Customers {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 164px;
+    & > .Title {
+      .Title-title {
+        width: 323px;
+      }
+    }
+  }
+}
