@@ -1,4 +1,11 @@
 .Customers {
+  position: relative;
+  &-bg {
+    width: 642px;
+    position: absolute;
+    top: -454px;
+    z-index: -1;
+  }
   .container {
     display: flex;
     justify-content: space-between;

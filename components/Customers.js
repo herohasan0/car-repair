@@ -4,6 +4,7 @@ import Customercard from './Customercard';
 function Customers() {
   return (
     <section className="Customers">
+      <img src="/gears-gallery-bg.png" className="Customers-bg"></img>
       <div className="container">
         <Title
           subject="OUR CUSTOMERS"
