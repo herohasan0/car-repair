@@ -837,6 +837,74 @@ body {
       font-weight: 900;
       color: #02133c; }
 
+.Footer {
+  padding-top: 160px; }
+  .Footer .container {
+    display: flex;
+    justify-content: space-between; }
+  .Footer-main {
+    padding-bottom: 98px; }
+    .Footer-main-section-logo {
+      width: 174px;
+      height: 39px; }
+    .Footer-main-section-text {
+      font-size: 14px;
+      line-height: 22px;
+      letter-spacing: 0.15px;
+      color: #4b4b4b;
+      margin-top: 23px; }
+    .Footer-main-section-social {
+      margin-top: 33px; }
+      .Footer-main-section-social-media + .Footer-main-section-social-media {
+        margin-left: 18px; }
+    .Footer-main-contact-title {
+      color: #4b4b4b;
+      height: 22px; }
+    .Footer-main-contact-container {
+      margin-top: 28px; }
+      .Footer-main-contact-container-line {
+        display: flex;
+        margin-top: 16px; }
+        .Footer-main-contact-container-line-img {
+          width: 16px;
+          height: 16px;
+          margin-right: 18px;
+          position: relative;
+          top: 3px; }
+        .Footer-main-contact-container-line-text {
+          width: 200px;
+          font-size: 14px;
+          line-height: 20px;
+          letter-spacing: 0.15px;
+          color: #4b4b4b; }
+    .Footer-main-section {
+      width: 235px; }
+    .Footer-main-links-title {
+      color: #4b4b4b; }
+    .Footer-main-links-container {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      margin-top: 28px;
+      height: 160px; }
+      .Footer-main-links-container-link {
+        width: 159px;
+        margin-top: 11px;
+        font-size: 14px;
+        color: #4b4b4b;
+        line-height: 22px;
+        letter-spacing: 0.15px; }
+  .Footer-bottom {
+    background-color: #02133c;
+    color: #959595;
+    height: 60px; }
+    .Footer-bottom .container {
+      line-height: 60px;
+      font-size: 12px;
+      letter-spacing: 0.15px; }
+    .Footer-bottom-right span {
+      font-weight: normal; }
+
 .Top-bg {
   background: url(/bg-img.png) no-repeat center center/cover;
   position: absolute;

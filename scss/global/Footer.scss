@@ -1,0 +1,98 @@
+.Footer {
+  padding-top: 160px;
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &-main {
+    padding-bottom: 98px;
+    &-section {
+      &-logo {
+        width: 174px;
+        height: 39px;
+      }
+      &-text {
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 0.15px;
+        color: $color-gray;
+        margin-top: 23px;
+      }
+      &-social {
+        margin-top: 33px;
+        &-media {
+          & + & {
+            margin-left: 18px;
+          }
+        }
+      }
+    }
+    &-contact {
+      &-title {
+        color: $color-gray;
+        height: 22px;
+      }
+      &-container {
+        margin-top: 28px;
+        &-line {
+          display: flex;
+          margin-top: 16px;
+          &-img {
+            width: 16px;
+            height: 16px;
+            margin-right: 18px;
+            position: relative;
+            top: 3px;
+          }
+          &-text {
+            width: 200px;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0.15px;
+            color: $color-gray;
+          }
+        }
+      }
+    }
+
+    &-section {
+      width: 235px;
+    }
+    &-links {
+      &-title {
+        color: $color-gray;
+      }
+      &-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: 28px;
+        height: 160px;
+
+        &-link {
+          width: 159px;
+          margin-top: 11px;
+          font-size: 14px;
+          color: $color-gray;
+          line-height: 22px;
+          letter-spacing: 0.15px;
+        }
+      }
+    }
+  }
+  &-bottom {
+    background-color: $color-black;
+    color: $color-placeholder;
+    height: 60px;
+    .container {
+      line-height: 60px;
+      font-size: 12px;
+      letter-spacing: 0.15px;
+    }
+    &-right {
+      span {
+        font-weight: normal;
+      }
+    }
+  }
+}
