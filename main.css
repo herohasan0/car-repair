@@ -914,7 +914,7 @@ body {
       font-size: 12px;
       letter-spacing: 0.15px; }
     .Footer-bottom-right span {
-      font-weight: normal; }
+      font-weight: bold; }
 
 .Top-bg {
   background: url(/bg-img.png) no-repeat center center/cover;
