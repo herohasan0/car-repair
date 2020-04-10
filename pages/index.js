@@ -32,6 +32,9 @@ export default () => {
             voluptas nulla pariatur."
         img="/first-cover.png"
         offLinks={{ display: 'none' }}
+        bg={{
+          background: 'url(/maincard-bg.png) no-repeat center center / cover',
+        }}
       />
       <Promises />
       <Video />

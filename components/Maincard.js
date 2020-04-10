@@ -2,7 +2,7 @@ import Title from './Title';
 
 function Maincard(props) {
   return (
-    <section className="Maincard">
+    <section className="Maincard" style={props.bg}>
       <div className="container">
         <div className="Maincard-content">
           <Title subject={props.subject} title={props.title} />
