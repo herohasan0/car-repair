@@ -11,7 +11,7 @@ function Layout({ children }) {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link rel="shortcut icon" type="image/png" href="/favicon.png" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap"
           rel="stylesheet"
         ></link>
       </Head>
