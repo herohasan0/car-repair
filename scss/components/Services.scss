@@ -1,5 +1,11 @@
 .Services {
-  margin-top: 110px;
+  padding-top: 110px;
+  padding-bottom: 122px;
+
+  background-color: red;
+  background: url(/gears-left-top-bg.png) no-repeat left top / cover,
+    url(/gears-right-bottom-bg.png) no-repeat right bottom / cover;
+  background-size: 642px;
   &-content {
     display: flex;
     flex-wrap: wrap;

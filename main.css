@@ -621,7 +621,11 @@ body {
       height: 140px; }
 
 .Services {
-  margin-top: 110px; }
+  padding-top: 110px;
+  padding-bottom: 122px;
+  background-color: red;
+  background: url(/gears-left-top-bg.png) no-repeat left top/cover, url(/gears-right-bottom-bg.png) no-repeat right bottom/cover;
+  background-size: 642px; }
   .Services-content {
     display: flex;
     flex-wrap: wrap;
@@ -651,7 +655,6 @@ body {
   height: 980px;
   background-color: #02133c;
   background: url(/appointment-bg.png) no-repeat center center/cover;
-  margin-top: 122px;
   padding-top: 130px; }
   .Appointment .container {
     display: flex;
