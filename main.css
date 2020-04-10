@@ -371,7 +371,8 @@ td {
 
 body {
   font-family: "Roboto", sans-serif;
-  background-color: #f5f5f5; }
+  background-color: #f5f5f5;
+  font-size: 14px; }
 
 .container {
   max-width: 1020px;
@@ -451,7 +452,7 @@ body {
   align-items: center;
   color: black;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 1em;
   line-height: 22px;
   letter-spacing: 0.15px;
   height: 40px; }
@@ -859,7 +860,7 @@ body {
       width: 174px;
       height: 39px; }
     .Footer-main-section-text {
-      font-size: 14px;
+      font-size: 1em;
       line-height: 22px;
       letter-spacing: 0.15px;
       color: #4b4b4b;
@@ -884,7 +885,7 @@ body {
           top: 3px; }
         .Footer-main-contact-container-line-text {
           width: 200px;
-          font-size: 14px;
+          font-size: 1em;
           line-height: 20px;
           letter-spacing: 0.15px;
           color: #4b4b4b; }
@@ -901,7 +902,7 @@ body {
       .Footer-main-links-container-link {
         width: 159px;
         margin-top: 11px;
-        font-size: 14px;
+        font-size: 1em;
         color: #4b4b4b;
         line-height: 22px;
         letter-spacing: 0.15px; }
