@@ -31,7 +31,7 @@ export default () => {
             nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
             voluptas nulla pariatur."
         img="/first-cover.png"
-        on={{ display: 'none' }}
+        offLinks={{ display: 'none' }}
       />
       <Promises />
       <Video />
@@ -45,6 +45,7 @@ export default () => {
         link3="Live stream: Bay 2"
         link4="Live stream: Bay 3"
         img="/gallery-pic.png"
+        offText={{ display: 'none' }}
       />
       <Customers />
       <Impact />

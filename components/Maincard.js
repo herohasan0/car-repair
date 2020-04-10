@@ -6,10 +6,10 @@ function Maincard(props) {
       <div className="container">
         <div className="Maincard-content">
           <Title subject={props.subject} title={props.title} />
-          <div className="Maincard-text" style={props.on}>
+          <div className="Maincard-text" style={props.offText}>
             {props.text}
           </div>
-          <div className="Maincard-links" style={props.on}>
+          <div className="Maincard-links" style={props.offLinks}>
             <a href="" className="Maincard-links-link">
               {props.link1}
             </a>
