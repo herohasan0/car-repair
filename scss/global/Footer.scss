@@ -14,7 +14,7 @@
       &-text {
         font-size: 1em;
         line-height: 22px;
-        letter-spacing: 0.15px;
+        letter-spacing: $letter-space;
         color: $color-gray;
         margin-top: 23px;
       }
@@ -48,7 +48,7 @@
             width: 200px;
             font-size: 1em;
             line-height: 20px;
-            letter-spacing: 0.15px;
+            letter-spacing: $letter-space;
             color: $color-gray;
           }
         }
@@ -75,7 +75,7 @@
           font-size: 1em;
           color: $color-gray;
           line-height: 22px;
-          letter-spacing: 0.15px;
+          letter-spacing: $letter-space;
         }
       }
     }
@@ -87,7 +87,7 @@
     .container {
       line-height: 60px;
       font-size: 12px;
-      letter-spacing: 0.15px;
+      letter-spacing: $letter-space;
     }
     &-right {
       span {

@@ -7,7 +7,7 @@
     &-text {
       color: $color-gray;
       line-height: 24px;
-      letter-spacing: 0.15px;
+      letter-spacing: $letter-space;
       height: 189px;
     }
   }
@@ -21,7 +21,7 @@
       color: $color-black;
       margin-top: 30px;
       margin-left: 17px;
-      letter-spacing: 0.15px;
+      letter-spacing: $letter-space;
     }
   }
 }
