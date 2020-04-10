@@ -650,6 +650,7 @@ body {
 .Appointment {
   height: 980px;
   background-color: #02133c;
+  background: url(/appointment-bg.png) no-repeat center center/cover;
   margin-top: 122px;
   padding-top: 130px; }
   .Appointment .container {
