@@ -1,5 +1,4 @@
 import Button from './Button';
-import Navigation from './Navigation';
 
 export default () => {
   return (
@@ -8,9 +7,12 @@ export default () => {
         <div className="Header-left">
           <div className="Header-left-logo">
             <a href="">
-              <img src="/website-logo.svg" class="logo" />
+              <div className="logo"></div>
             </a>
           </div>
+        </div>
+        <div className="icon Header-switch" onClick={clickThat}>
+          <div className="button-icon Header-switch-icon"></div>
         </div>
         <div className="Header-right">
           <div className="Header-right-section">
@@ -37,3 +39,8 @@ export default () => {
     </header>
   );
 };
+
+function clickThat() {
+  var e = document.getElementById('switch');
+  e.classList.toggle('switch');
+}

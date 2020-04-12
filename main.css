@@ -377,59 +377,157 @@ body {
 .container {
   max-width: 1020px;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px; }
+  @media (min-width: 768px) {
+    .container {
+      padding-left: initial;
+      padding-right: initial; } }
 
 .icon {
-  width: 24px;
-  height: 24px; }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px; }
+  @media (min-width: 768px) {
+    .icon {
+      display: initial;
+      width: 24px;
+      height: 24px; } }
+
+.button-icon {
+  background-size: 28px 28px !important;
+  width: 28px;
+  height: 28px; }
+  @media (min-width: 768px) {
+    .button-icon {
+      width: inherit;
+      height: inherit;
+      background-size: initial; } }
 
 .logo {
   width: 174px;
   height: 41px; }
 
-.Header > .container {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 26px; }
+.Header {
+  background-color: rgba(255, 255, 255, 0.178);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  padding-bottom: 28px; }
+  .Header-switch-icon {
+    background: url(/home-switch-button.svg) no-repeat center center; }
+  @media (min-width: 768px) {
+    .Header-switch {
+      display: none; } }
+  @media (min-width: 768px) {
+    .Header {
+      background-color: initial;
+      -webkit-backdrop-filter: initial;
+              backdrop-filter: initial; } }
+  .Header > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 26px; }
+  .Header-left {
+    z-index: 5; }
+    .Header-left-logo .logo {
+      background: url(/website-logo.svg) no-repeat center center; }
+    @media (min-width: 768px) {
+      .Header-left {
+        z-index: initial; } }
+  .Header-right {
+    display: none; }
+    @media (min-width: 768px) {
+      .Header-right {
+        display: flex; } }
+    .Header-right-section:nth-child(1) {
+      width: 206px;
+      margin-right: 30px; }
+    .Header-right-section:nth-child(2) {
+      width: 131px;
+      margin-right: 32px; }
+    .Header-right-section img {
+      float: left;
+      margin-right: 10px;
+      margin-top: 2px; }
+    .Header-right-section .text {
+      line-height: 22px;
+      letter-spacing: 0.15px;
+      font-size: 12px;
+      color: white;
+      font-weight: bold; }
 
-.Header-right {
-  display: flex; }
-  .Header-right-section:nth-child(1) {
-    width: 206px;
-    margin-right: 30px; }
-  .Header-right-section:nth-child(2) {
-    width: 131px;
-    margin-right: 32px; }
-  .Header-right-section img {
-    float: left;
-    margin-right: 10px;
-    margin-top: 2px; }
-  .Header-right-section .text {
-    line-height: 22px;
-    letter-spacing: 0.15px;
-    font-size: 12px;
-    color: white;
-    font-weight: bold; }
+@media (min-width: 768px) {
+  .Navigation-switch {
+    display: none; } }
 
 .Navigation > .container {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.178);
   display: flex;
-  justify-content: space-between;
-  margin-top: 28px;
-  padding: 10px 48px 10px 40px; }
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none; }
+  @media (min-width: 768px) {
+    .Navigation > .container {
+      background-color: white;
+      padding: 10px 48px 10px 40px;
+      justify-content: space-between;
+      opacity: 1;
+      pointer-events: initial; } }
 
 .Navigation-left {
-  display: flex; }
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  @media (min-width: 768px) {
+    .Navigation-left {
+      flex-direction: row;
+      align-items: initial; } }
   .Navigation-left .Link {
-    margin-right: 37px; }
+    color: white;
+    font-size: 16px; }
+    @media (min-width: 768px) {
+      .Navigation-left .Link {
+        color: #02133c;
+        margin-right: 37px;
+        font-size: 1em; } }
     .Navigation-left .Link span {
       padding-right: 5px; }
 
+.Navigation-container.container {
+  opacity: 1; }
+  @media (min-width: 768px) {
+    .Navigation-container.container {
+      padding: 0;
+      position: relative; } }
+
 .Navigation-right {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  position: absolute;
+  right: 68px;
+  top: 27px; }
+  @media (min-width: 768px) {
+    .Navigation-right {
+      top: -42px; } }
+  .Navigation-right-search-icon {
+    background: url(/search-white.svg) no-repeat center center; }
+    @media (min-width: 768px) {
+      .Navigation-right-search-icon {
+        background: url(/search.svg) no-repeat center center; } }
+  .Navigation-right-shopping-icon {
+    background: url(/shopping-cart-white.svg) no-repeat center center; }
+    @media (min-width: 768px) {
+      .Navigation-right-shopping-icon {
+        background: url(/shopping-cart.svg) no-repeat center center; } }
   .Navigation-right .shopping-cart {
     position: relative; }
+    @media (min-width: 768px) {
+      .Navigation-right .shopping-cart {
+        margin-left: 22px; } }
     .Navigation-right .shopping-cart-indicator {
       display: flex;
       justify-content: center;
@@ -442,10 +540,20 @@ body {
       width: 16px;
       height: 16px;
       position: absolute;
-      right: -8px;
-      top: -5px; }
-  .Navigation-right img {
-    margin-left: 22px; }
+      right: -4px;
+      top: 0px; }
+      @media (min-width: 768px) {
+        .Navigation-right .shopping-cart-indicator {
+          right: -8px;
+          top: -5px; } }
+
+#switch {
+  transition: 0.17s;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px); }
+  #switch.switch {
+    opacity: 1;
+    pointer-events: initial; }
 
 .Link {
   display: flex;
@@ -465,7 +573,10 @@ body {
     .Link img.expand {
       position: relative;
       top: 1px;
-      display: block; }
+      display: none; }
+      @media (min-width: 768px) {
+        .Link img.expand {
+          display: block; } }
 
 .button {
   display: flex;
@@ -918,20 +1029,33 @@ body {
       font-weight: bold; }
 
 .Top-bg {
-  background: url(/bg-img.png) no-repeat center center/cover;
+  background: url(/bg-img.png) no-repeat;
+  background-position: right top;
+  background-size: cover;
   position: absolute;
   top: 0;
   width: 100%;
-  height: 800px;
+  height: -webkit-fill-available;
   z-index: -1; }
+  @media (min-width: 768px) {
+    .Top-bg {
+      background-position: center center;
+      height: 800px; } }
 
 .Top-title {
   color: white;
-  margin-top: 126px;
   font-size: 56px;
   line-height: 56px;
-  font-weight: 900; }
+  font-weight: 900;
+  margin-top: -100px; }
+  @media (min-width: 768px) {
+    .Top-title {
+      margin-top: 126px;
+      width: 583px; } }
 
 .Top .container a .button {
   margin-top: 48px;
-  margin-bottom: 312px; }
+  margin-bottom: 170px; }
+  @media (min-width: 768px) {
+    .Top .container a .button {
+      margin-bottom: 312px; } }

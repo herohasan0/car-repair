@@ -8,11 +8,35 @@ body {
   max-width: $container-width;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  @include mq {
+    padding-left: initial;
+    padding-right: initial;
+  }
 }
 
 .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: $icon-width;
   height: $icon-height;
+  @include mq {
+    display: initial;
+    width: 24px;
+    height: 24px;
+  }
+}
+.button-icon {
+  background-size: 28px 28px !important;
+  width: 28px;
+  height: 28px;
+  @include mq {
+    width: inherit;
+    height: inherit;
+    background-size: initial;
+  }
 }
 
 .logo {

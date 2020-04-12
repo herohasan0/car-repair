@@ -1,25 +1,78 @@
 .Navigation {
+  &-switch {
+    @include mq {
+      display: none;
+    }
+  }
   & > .container {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.178);
     display: flex;
-    justify-content: space-between;
-    margin-top: 28px;
-    padding: 10px 48px 10px 40px;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    @include mq {
+      background-color: white;
+      padding: 10px 48px 10px 40px;
+      justify-content: space-between;
+      opacity: 1;
+      pointer-events: initial;
+    }
   }
   &-left {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include mq {
+      flex-direction: row;
+      align-items: initial;
+    }
     .Link {
-      margin-right: 37px;
+      color: white;
+      font-size: 16px;
+      @include mq {
+        color: $color-black;
+        margin-right: 37px;
+        font-size: 1em;
+      }
       span {
         padding-right: 5px;
       }
     }
   }
+  &-container.container {
+    opacity: 1;
+    @include mq {
+      padding: 0;
+      position: relative;
+    }
+  }
   &-right {
     display: flex;
     align-items: center;
+    position: absolute;
+    right: 68px;
+    top: 27px;
+    @include mq {
+      top: -42px;
+    }
+    &-search-icon {
+      background: url(/search-white.svg) no-repeat center center;
+      @include mq {
+        background: url(/search.svg) no-repeat center center;
+      }
+    }
+    &-shopping-icon {
+      background: url(/shopping-cart-white.svg) no-repeat center center;
+      @include mq {
+        background: url(/shopping-cart.svg) no-repeat center center;
+      }
+    }
     .shopping-cart {
       position: relative;
+      @include mq {
+        margin-left: 22px;
+      }
       &-indicator {
         display: flex;
         justify-content: center;
@@ -32,13 +85,23 @@
         width: 16px;
         height: 16px;
         position: absolute;
-        right: -8px;
-        top: -5px;
+        right: -4px;
+        top: 0px;
+        @include mq {
+          right: -8px;
+          top: -5px;
+        }
       }
     }
+  }
+}
 
-    img {
-      margin-left: 22px;
-    }
+#switch {
+  transition: 0.17s;
+  backdrop-filter: blur(5px);
+
+  &.switch {
+    opacity: 1;
+    pointer-events: initial;
   }
 }

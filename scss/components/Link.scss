@@ -17,7 +17,10 @@
     &.expand {
       position: relative;
       top: 1px;
-      display: block;
+      display: none;
+      @include mq {
+        display: block;
+      }
     }
   }
 }
