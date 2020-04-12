@@ -783,12 +783,13 @@ body {
 
 .Services {
   padding-top: 70px;
-  padding-bottom: 122px;
+  padding-bottom: 70px;
   background: url(/gears-left-top-bg.png) no-repeat left top/cover, url(/gears-right-bottom-bg.png) no-repeat right bottom/cover;
   background-size: 642px; }
   @media (min-width: 768px) {
     .Services {
-      padding-top: 110px; } }
+      padding-top: 110px;
+      padding-bottom: 122px; } }
   .Services-content {
     display: flex;
     flex-direction: column;
@@ -808,16 +809,21 @@ body {
           margin-top: 66px; } }
 
 .Servicecard {
-  height: 340px;
   background-color: white;
-  padding: 50px 44px 50px 43px;
+  padding: 30px;
   flex-direction: column;
   align-items: center;
-  margin-top: 50px; }
+  margin-top: 50px;
+  margin-left: 20px;
+  margin-right: 20px; }
   @media (min-width: 768px) {
     .Servicecard {
       width: 324px;
-      margin-top: 79px; } }
+      margin-top: 79px;
+      padding: 50px 44px 50px 43px;
+      height: 340px;
+      margin-left: initial;
+      margin-right: initial; } }
   .Servicecard-content {
     margin-left: initial;
     text-align: center; }

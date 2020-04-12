@@ -1,11 +1,12 @@
 .Services {
   padding-top: 70px;
-  padding-bottom: 122px;
+  padding-bottom: 70px;
   background: url(/gears-left-top-bg.png) no-repeat left top / cover,
     url(/gears-right-bottom-bg.png) no-repeat right bottom / cover;
   background-size: 642px;
   @include mq {
     padding-top: 110px;
+    padding-bottom: 122px;
   }
   &-content {
     display: flex;

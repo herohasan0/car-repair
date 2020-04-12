@@ -1,13 +1,18 @@
 .Servicecard {
-  height: 340px;
   background-color: white;
-  padding: 50px 44px 50px 43px;
+  padding: 30px;
   flex-direction: column;
   align-items: center;
   margin-top: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
   @include mq {
     width: 324px;
     margin-top: 79px;
+    padding: 50px 44px 50px 43px;
+    height: 340px;
+    margin-left: initial;
+    margin-right: initial;
   }
   &-content {
     margin-left: initial;
