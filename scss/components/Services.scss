@@ -1,20 +1,29 @@
 .Services {
-  padding-top: 110px;
+  padding-top: 70px;
   padding-bottom: 122px;
-
-  background-color: red;
   background: url(/gears-left-top-bg.png) no-repeat left top / cover,
     url(/gears-right-bottom-bg.png) no-repeat right bottom / cover;
   background-size: 642px;
+  @include mq {
+    padding-top: 110px;
+  }
   &-content {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
+    flex-direction: column;
+    align-items: center;
+    @include mq {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: initial;
+    }
     a {
       margin-left: auto;
       margin-right: auto;
-      margin-top: 66px;
+      margin-top: 50px;
+      @include mq {
+        margin-top: 66px;
+      }
     }
   }
 }

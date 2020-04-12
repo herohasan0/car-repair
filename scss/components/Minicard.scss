@@ -14,10 +14,10 @@
   }
   &-content {
     width: 300px;
-    margin-top: 23px;
     text-align: center;
     @include mq {
       margin-left: 23px;
+      margin-top: 23px;
       margin-top: initial;
       width: 235px;
       text-align: initial;
