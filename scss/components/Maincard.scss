@@ -8,7 +8,6 @@
   margin-right: auto;
   &-content {
     padding-top: 70px;
-
     @include mq {
       margin-left: 87px;
       margin-right: 87px;
@@ -30,6 +29,7 @@
     }
   }
   &-links {
+    position: relative;
     &:before {
       color: white;
       display: flex;
@@ -37,33 +37,42 @@
       align-items: center;
       content: 'Live';
       position: absolute;
-      right: 87px;
-      top: 344px;
+      right: 13px;
+      top: 93px;
       width: 50px;
       height: 30px;
       background-color: $color-green;
       z-index: 5;
       box-shadow: 0px 8px 16px rgba(38, 38, 38, 0.2),
         0px 4px 8px rgba(38, 38, 38, 0.24);
-      margin-top: 30px;
-      margin-right: 32px;
+      @include mq {
+        right: 32px;
+        top: 127px;
+      }
     }
-    margin-top: 56px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 36px;
+    @include mq {
+      margin-top: 56px;
+    }
   }
   &-links-link {
     position: relative;
-    font-size: 16px;
+    font-size: 1em;
     font-weight: lighter;
     line-height: 24px;
     letter-spacing: $letter-space;
     color: $color-black;
-    border-bottom: 1px solid $color-gray-line;
-    width: 212px;
     text-align: center;
-    padding-bottom: 15px;
+
+    @include mq {
+      width: 212px;
+      border-bottom: 1px solid $color-gray-line;
+      font-size: 16px;
+      padding-bottom: 15px;
+    }
     &:nth-child(1)::before {
       display: none;
     }
@@ -82,7 +91,10 @@
       position: absolute;
       background-color: $color-green;
       z-index: 1;
-      right: 27px;
+      right: -5px;
+      @include mq {
+        right: 27px;
+      }
     }
   }
 }
