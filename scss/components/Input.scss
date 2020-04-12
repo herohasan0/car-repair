@@ -1,11 +1,14 @@
 .Input {
   height: 48px;
-  width: 224px;
   padding-left: 23px;
   background-color: $color-bg;
   appearance: none;
   box-shadow: none;
   border: none;
+  width: 48%;
+  @include mq {
+    width: 224px;
+  }
   &::placeholder {
     color: $color-placeholder;
     font-weight: lighter;

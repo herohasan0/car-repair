@@ -834,23 +834,39 @@ body {
       box-shadow: 0px 16px 24px rgba(38, 38, 38, 0.2), 0px 8px 16px rgba(38, 38, 38, 0.24); } }
 
 .Appointment {
-  height: 980px;
   background-color: #02133c;
   background: url(/appointment-bg.png) no-repeat center center/cover;
-  padding-top: 130px; }
+  padding-top: 70px;
+  padding-bottom: 140px; }
   .Appointment .container {
     display: flex;
     justify-content: center;
     align-items: center; }
+  @media (min-width: 768px) {
+    .Appointment {
+      padding-top: 130px;
+      padding-bottom: initial;
+      height: 980px; } }
   .Appointment-form {
     background-color: white;
-    width: 585px;
-    height: 640px;
-    padding-left: 57px;
-    padding-right: 57px; }
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 50px; }
+    @media (min-width: 768px) {
+      .Appointment-form {
+        width: 585px;
+        height: 640px;
+        padding-left: 57px;
+        padding-right: 57px;
+        padding-bottom: initial; } }
     .Appointment-form .button {
       margin-left: auto;
-      margin-top: 30px; }
+      margin-right: auto;
+      margin-top: 22px; }
+      @media (min-width: 768px) {
+        .Appointment-form .button {
+          margin-top: 30px;
+          margin-right: initial; } }
     .Appointment-form-content {
       display: flex;
       flex-wrap: wrap;
@@ -861,12 +877,15 @@ body {
       .Appointment-form-content textarea {
         margin-top: 22px;
         width: 100%;
-        height: 180px;
+        height: 96px;
         background-color: #f5f5f5;
         border: none;
         resize: none;
         padding-left: 23px;
         padding-top: 17px; }
+        @media (min-width: 768px) {
+          .Appointment-form-content textarea {
+            height: 180px; } }
         .Appointment-form-content textarea::-webkit-input-placeholder {
           color: #959595; }
         .Appointment-form-content textarea::-moz-placeholder {
@@ -883,39 +902,48 @@ body {
       line-height: 42px;
       text-align: center;
       color: #02133c;
-      padding-top: 76px; }
+      padding-top: 50px; }
+      @media (min-width: 768px) {
+        .Appointment-form-title {
+          padding-top: 76px; } }
   .Appointment-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    height: 280px;
-    width: 324px;
-    font-weight: 900;
-    margin-left: 111px; }
-    .Appointment-text-title {
-      color: white;
-      font-size: 30px;
-      text-align: center; }
-    .Appointment-text-count {
-      color: #c40b0b;
-      font-size: 96px;
-      line-height: 56px; }
-    .Appointment-text-bottom {
-      color: white;
-      font-size: 19px;
-      line-height: 26px; }
+    display: none; }
+    @media (min-width: 768px) {
+      .Appointment-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 280px;
+        width: 324px;
+        font-weight: 900;
+        margin-left: 111px; }
+        .Appointment-text-title {
+          color: white;
+          font-size: 30px;
+          text-align: center; }
+        .Appointment-text-count {
+          color: #c40b0b;
+          font-size: 96px;
+          line-height: 56px; }
+        .Appointment-text-bottom {
+          color: white;
+          font-size: 19px;
+          line-height: 26px; } }
 
 .Input {
   height: 48px;
-  width: 224px;
   padding-left: 23px;
   background-color: #f5f5f5;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
   box-shadow: none;
-  border: none; }
+  border: none;
+  width: 48%; }
+  @media (min-width: 768px) {
+    .Input {
+      width: 224px; } }
   .Input::-webkit-input-placeholder {
     color: #959595;
     font-weight: lighter;
