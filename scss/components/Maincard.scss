@@ -7,21 +7,27 @@
   margin-left: auto;
   margin-right: auto;
   &-content {
-    padding-top: 100px;
-    margin-left: 87px;
-    margin-right: 87px;
+    padding-top: 70px;
+
+    @include mq {
+      margin-left: 87px;
+      margin-right: 87px;
+    }
   }
   &-text {
     color: $color-gray;
     font-size: 16px;
     line-height: 24px;
-    letter-spacing: 0.15;
+    letter-spacing: 0.15px;
     margin-top: 36px;
   }
 
   &-img {
     margin-top: 54px;
-    width: 846px;
+    width: 100%;
+    @include mq {
+      width: 846px;
+    }
   }
   &-links {
     &:before {

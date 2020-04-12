@@ -606,18 +606,23 @@ body {
   margin-left: auto;
   margin-right: auto; }
   .Maincard-content {
-    padding-top: 100px;
-    margin-left: 87px;
-    margin-right: 87px; }
+    padding-top: 70px; }
+    @media (min-width: 768px) {
+      .Maincard-content {
+        margin-left: 87px;
+        margin-right: 87px; } }
   .Maincard-text {
     color: #4b4b4b;
     font-size: 16px;
     line-height: 24px;
-    letter-spacing: 0.15;
+    letter-spacing: 0.15px;
     margin-top: 36px; }
   .Maincard-img {
     margin-top: 54px;
-    width: 846px; }
+    width: 100%; }
+    @media (min-width: 768px) {
+      .Maincard-img {
+        width: 846px; } }
   .Maincard-links {
     margin-top: 56px;
     display: flex;
@@ -680,12 +685,14 @@ body {
     letter-spacing: 2.5px; }
 
 .Title-title {
-  width: 583px;
   color: #02133c;
   margin-top: 33px;
   font-size: 36px;
   font-weight: 900;
   line-height: 42px; }
+  @media (min-width: 768px) {
+    .Title-title {
+      width: 583px; } }
 
 .Promises {
   position: relative;
@@ -1035,7 +1042,7 @@ body {
   position: absolute;
   top: 0;
   width: 100%;
-  height: -webkit-fill-available;
+  height: 600px;
   z-index: -1; }
   @media (min-width: 768px) {
     .Top-bg {
@@ -1055,7 +1062,7 @@ body {
 
 .Top .container a .button {
   margin-top: 48px;
-  margin-bottom: 170px; }
+  margin-bottom: 130px; }
   @media (min-width: 768px) {
     .Top .container a .button {
       margin-bottom: 312px; } }

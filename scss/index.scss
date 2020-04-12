@@ -6,7 +6,8 @@
     position: absolute;
     top: 0;
     width: 100%;
-    height: -webkit-fill-available;
+    // height: -webkit-fill-available;iü
+    height: 600px;
     z-index: -1;
     @include mq {
       background-position: center center;
@@ -28,7 +29,7 @@
     a {
       .button {
         margin-top: 48px;
-        margin-bottom: 170px;
+        margin-bottom: 130px;
         @include mq {
           margin-bottom: 312px;
         }
