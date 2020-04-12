@@ -745,21 +745,41 @@ body {
       line-height: 24px; }
 
 .Video {
-  background: url(/video-cover.png) no-repeat center center/cover;
+  position: relative;
+  background: url(/video-cover.png) no-repeat;
+  background-position: -150px;
+  background-size: cover;
   padding-top: 112px;
   padding-bottom: 120px;
-  margin-top: 156px; }
+  margin-top: 70px;
+  height: 500px; }
+  @media (min-width: 768px) {
+    .Video {
+      margin-top: 156px;
+      background-position: center center; } }
   .Video-content {
-    margin-left: 819px; }
+    padding-left: 20px; }
+    @media (min-width: 768px) {
+      .Video-content {
+        position: absolute;
+        right: 210px; } }
     .Video-content-title {
       color: white;
       font-size: 36px;
       font-weight: 900;
-      line-height: 42px;
-      width: 411px; }
+      line-height: 42px; }
+      @media (min-width: 768px) {
+        .Video-content-title {
+          width: 411px; } }
     .Video-content-play {
-      width: 140px;
-      height: 140px; }
+      width: 100px;
+      height: 100px;
+      margin-top: 10px; }
+      @media (min-width: 768px) {
+        .Video-content-play {
+          width: 140px;
+          height: 140px;
+          margin-top: initial; } }
 
 .Services {
   padding-top: 110px;
