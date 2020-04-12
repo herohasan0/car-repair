@@ -695,22 +695,44 @@ body {
       width: 583px; } }
 
 .Promises {
-  position: relative;
-  top: 35px;
-  margin-top: 110px; }
+  position: relative; }
+  @media (min-width: 768px) {
+    .Promises {
+      top: 35px;
+      margin-top: 110px; } }
   .Promises-content {
     display: flex;
-    justify-content: space-between; }
+    flex-direction: column;
+    align-items: center; }
+    @media (min-width: 768px) {
+      .Promises-content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: initial; } }
 
 .Minicard {
   display: flex;
-  margin-top: 69px; }
+  margin-top: 40px;
+  flex-direction: column;
+  align-items: center; }
+  @media (min-width: 768px) {
+    .Minicard {
+      flex-direction: row;
+      align-items: initial;
+      margin-top: 69px; } }
   .Minicard-icon {
     width: 63px;
     height: 63px; }
   .Minicard-content {
-    width: 235px;
-    margin-left: 23px; }
+    width: 300px;
+    margin-top: 23px;
+    text-align: center; }
+    @media (min-width: 768px) {
+      .Minicard-content {
+        margin-left: 23px;
+        margin-top: initial;
+        width: 235px;
+        text-align: initial; } }
     .Minicard-content-title {
       font-weight: 900;
       color: #02133c;

@@ -1,13 +1,27 @@
 .Minicard {
   display: flex;
-  margin-top: 69px;
+  margin-top: 40px;
+  flex-direction: column;
+  align-items: center;
+  @include mq {
+    flex-direction: row;
+    align-items: initial;
+    margin-top: 69px;
+  }
   &-icon {
     width: 63px;
     height: 63px;
   }
   &-content {
-    width: 235px;
-    margin-left: 23px;
+    width: 300px;
+    margin-top: 23px;
+    text-align: center;
+    @include mq {
+      margin-left: 23px;
+      margin-top: initial;
+      width: 235px;
+      text-align: initial;
+    }
     &-title {
       font-weight: 900;
       color: $color-black;
