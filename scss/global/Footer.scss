@@ -1,11 +1,21 @@
 .Footer {
-  padding-top: 160px;
+  padding-top: 50px;
+  @include mq {
+    padding-top: 160px;
+  }
   .container {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
+    @include mq {
+      flex-direction: row;
+    }
   }
   &-main {
-    padding-bottom: 98px;
+    padding-bottom: 50px;
+    @include mq {
+      padding-bottom: 98px;
+    }
     &-section {
       &-logo {
         width: 174px;
@@ -24,6 +34,37 @@
           & + & {
             margin-left: 18px;
           }
+        }
+      }
+    }
+
+    &-section {
+      @include mq {
+        width: 235px;
+      }
+    }
+    &-links {
+      margin-top: 22px;
+      @include mq {
+        margin-top: initial;
+      }
+      &-title {
+        color: $color-gray;
+      }
+      &-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: 28px;
+        height: 160px;
+
+        &-link {
+          width: 159px;
+          margin-top: 11px;
+          font-size: 1em;
+          color: $color-gray;
+          line-height: 22px;
+          letter-spacing: $letter-space;
         }
       }
     }
@@ -54,31 +95,6 @@
         }
       }
     }
-
-    &-section {
-      width: 235px;
-    }
-    &-links {
-      &-title {
-        color: $color-gray;
-      }
-      &-container {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        margin-top: 28px;
-        height: 160px;
-
-        &-link {
-          width: 159px;
-          margin-top: 11px;
-          font-size: 1em;
-          color: $color-gray;
-          line-height: 22px;
-          letter-spacing: $letter-space;
-        }
-      }
-    }
   }
   &-bottom {
     background-color: $color-black;
@@ -89,7 +105,19 @@
       font-size: 12px;
       letter-spacing: $letter-space;
     }
+    &-left {
+      display: none;
+      @include mq {
+        display: block;
+      }
+    }
     &-right {
+      margin-left: auto;
+      margin-right: auto;
+      @include mq {
+        margin-left: initial;
+        margin-right: initial;
+      }
       span {
         font-weight: bold;
       }
