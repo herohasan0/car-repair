@@ -596,8 +596,8 @@ body {
   padding: 9px 55px 9px 20px; }
 
 .Maincard {
-  background-color: #fff;
-  height: 700px;
+  background-color: white;
+  height: 100%;
   position: relative;
   top: -80px;
   width: -webkit-fit-content;
@@ -605,6 +605,9 @@ body {
   width: fit-content;
   margin-left: auto;
   margin-right: auto; }
+  @media (min-width: 768px) {
+    .Maincard {
+      height: 700px; } }
   .Maincard-content {
     padding-top: 70px; }
     @media (min-width: 768px) {
