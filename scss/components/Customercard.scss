@@ -1,14 +1,25 @@
 .Customercard {
-  width: 324px;
-  height: 340px;
   background-color: white;
   padding: 50px 44px 40px 43px;
+  & + & {
+    margin-top: 22px;
+    @include mq {
+      margin-top: initial;
+      margin-left: 24px;
+    }
+  }
+  @include mq {
+    width: 324px;
+    height: 340px;
+  }
   &-top {
     &-text {
       color: $color-gray;
       line-height: 24px;
       letter-spacing: $letter-space;
-      height: 189px;
+      @include mq {
+        height: 189px;
+      }
     }
   }
   &-bottom {

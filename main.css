@@ -981,15 +981,25 @@ body {
     line-height: 24px; }
 
 .Customercard {
-  width: 324px;
-  height: 340px;
   background-color: white;
   padding: 50px 44px 40px 43px; }
+  .Customercard + .Customercard {
+    margin-top: 22px; }
+    @media (min-width: 768px) {
+      .Customercard + .Customercard {
+        margin-top: initial;
+        margin-left: 24px; } }
+  @media (min-width: 768px) {
+    .Customercard {
+      width: 324px;
+      height: 340px; } }
   .Customercard-top-text {
     color: #4b4b4b;
     line-height: 24px;
-    letter-spacing: 0.15px;
-    height: 189px; }
+    letter-spacing: 0.15px; }
+    @media (min-width: 768px) {
+      .Customercard-top-text {
+        height: 189px; } }
   .Customercard-bottom {
     margin-top: 18px; }
     .Customercard-bottom-profile {
@@ -1003,17 +1013,37 @@ body {
 
 .Customers {
   position: relative; }
+  @media (min-width: 768px) {
+    .Customers .container {
+      display: flex; } }
   .Customers-bg {
-    width: 642px;
-    position: absolute;
-    top: -454px;
-    z-index: -1; }
-  .Customers .container {
+    display: none; }
+    @media (min-width: 768px) {
+      .Customers-bg {
+        display: block;
+        width: 642px;
+        position: absolute;
+        top: -454px;
+        z-index: -1; } }
+  .Customers-container {
     display: flex;
     justify-content: space-between;
-    margin-top: 164px; }
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px; }
+    @media (min-width: 768px) {
+      .Customers-container {
+        margin-top: initial;
+        flex-direction: row;
+        margin-top: initial; } }
+  @media (min-width: 768px) {
+    .Customers .container {
+      margin-top: 164px;
+      align-items: initial;
+      flex-direction: row; } }
+  @media (min-width: 768px) {
     .Customers .container > .Title .Title-title {
-      width: 323px; }
+      width: 323px; } }
 
 .Impactcard {
   display: flex;
