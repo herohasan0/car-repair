@@ -1,6 +1,10 @@
 .Impactcard {
   display: flex;
   align-items: center;
+  margin-top: 22px;
+  @include mq {
+    margin-top: initial;
+  }
   &-left {
     &-img {
       width: 76px;

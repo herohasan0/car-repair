@@ -1047,7 +1047,11 @@ body {
 
 .Impactcard {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  margin-top: 22px; }
+  @media (min-width: 768px) {
+    .Impactcard {
+      margin-top: initial; } }
   .Impactcard-left-img {
     width: 76px;
     height: 76px; }
@@ -1068,34 +1072,57 @@ body {
 
 .Impact {
   background: url(/impact-bg.png) no-repeat center center/cover;
-  height: 608px;
-  margin-top: 210px; }
+  margin-top: 50px;
+  padding-bottom: 50px; }
+  @media (min-width: 768px) {
+    .Impact {
+      margin-top: 210px;
+      height: 608px;
+      padding-bottom: initial; } }
   .Impact-top {
     display: flex;
     justify-content: space-between;
     position: relative; }
     .Impact-top .Title {
-      margin-top: 112px; }
+      margin-top: 50px; }
+      @media (min-width: 768px) {
+        .Impact-top .Title {
+          margin-top: 112px; } }
       .Impact-top .Title-subject span {
         color: #d5d5d5; }
       .Impact-top .Title-title {
-        color: white;
-        width: 411px; }
+        color: white; }
+        @media (min-width: 768px) {
+          .Impact-top .Title-title {
+            width: 411px; } }
     .Impact-top-img {
-      width: 498px;
-      height: 315px;
-      position: relative;
-      top: -80px; }
+      display: none; }
+      @media (min-width: 768px) {
+        .Impact-top-img {
+          display: block;
+          width: 498px;
+          height: 315px;
+          position: relative;
+          top: -80px; } }
   .Impact-middle {
     display: flex;
-    justify-content: space-between; }
+    flex-direction: column;
+    align-items: center; }
+    @media (min-width: 768px) {
+      .Impact-middle {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: initial; } }
   .Impact-bottom {
-    display: flex;
-    background-color: white;
-    justify-content: space-between;
-    align-items: center;
-    padding: 43px 76px 48px 70px;
-    margin-top: 134px; }
+    display: none; }
+    @media (min-width: 768px) {
+      .Impact-bottom {
+        display: flex;
+        background-color: white;
+        justify-content: space-between;
+        align-items: center;
+        padding: 43px 76px 48px 70px;
+        margin-top: 134px; } }
     .Impact-bottom-title {
       font-size: 24px;
       width: 562px;
